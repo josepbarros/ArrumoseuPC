@@ -1,0 +1,53 @@
+<ion-view view-title="Arrumo Seu PC">
+  <ion-content>
+ <!-- Caixa de texo, ordem serviço, Cliente, Contato, Telefone -->
+ 	 
+    <label class="item item-input">
+       <span class="input-label" size="1" maxlength="10">Ordem Serviço</span>
+       <input type="text">
+     </label>
+     <label class="item item-input">
+        <span class="input-label" size="10" maxlength="30">Cliente</span>
+        <input type="text">
+      </label>
+      <label class="item item-input">
+         <span class="input-label">Contato</span>
+         <input type="text">
+       </label>
+       <label class="item item-input">
+          <span class="input-label">Telefone</span>
+          <input type="text">
+        </label>
+
+    <!-- CheckBox  -->
+     <div class="list list-inset">
+      <h10>selecione os tipo de serviços</h10>
+      <form method="post" action="cadastrar-dados.php">
+      <input type="checkbox" name="info[]" value="formatar" />
+      Formatação
+      <br />
+      <input type="checkbox" name="info[]" value="office" />
+      Office
+      <br />
+      <input type="checkbox" name="info[]" value="backup" />
+      Backup
+      <br />
+      <input type="checkbox" name="info[]" value="impressora" />
+      Impressora
+      <br /><br />
+      <!-- <input type="submit" value="Enviar" /> -->
+      <!-- <input type="reset" value="Cancelar" /> -->
+  </div>
+<!-- email -->
+      <div class="list">
+        <div class="item item-input-inset">
+          <label class="item-input-wrapper">
+            <input type="text" placeholder="Email">
+          </label>
+          <button class="button button-small">
+            Submit
+          </button>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>
