@@ -18,36 +18,32 @@
           <span class="input-label">Telefone</span>
           <input type="text">
         </label>
+   <!-- checkBox -->
+<ul class="list">
 
-    <!-- CheckBox  -->
-     <div class="list list-inset">
-      <h10>selecione os tipo de serviços</h10>
-      <form method="post" action="cadastrar-dados.php">
-      <input type="checkbox" name="info[]" value="formatar" />
-      Formatação
-      <br />
-      <input type="checkbox" name="info[]" value="office" />
-      Office
-      <br />
-      <input type="checkbox" name="info[]" value="backup" />
-      Backup
-      <br />
-      <input type="checkbox" name="info[]" value="impressora" />
-      Impressora
-      <br /><br />
-      <!-- <input type="submit" value="Enviar" /> -->
-      <!-- <input type="reset" value="Cancelar" /> -->
-  </div>
-<!-- email -->
+   <h4 align=center>Selecione os servicos necessários</h4 align=center>
+      <li class="item item-checkbox"><label class="checkbox"><input type="checkbox">
+      </label>Instalar Windows
+      <li class="item item-checkbox"><label class="checkbox"><input type="checkbox">
+      </label>Instalar Linux
+      <li class="item item-checkbox"><label class="checkbox"><input type="checkbox">
+     </label>Instalar Pacote Office
+     <li class="item item-checkbox"><label class="checkbox"><input type="checkbox">
+     </label>Congiguração de Servidor
+     <li class="item item-checkbox"><label class="checkbox"><input type="checkbox">
+     </label>Configuração de Internet/Wi-Fi/Rede
+
+</ul>
+        <!-- email -->
       <div class="list">
-        <div class="item item-input-inset">
+       <div class="item item-input-inset">
           <label class="item-input-wrapper">
             <input type="text" placeholder="Email">
           </label>
           <button class="button button-small">
             Submit
           </button>
-        </div>
+         </div>
       </div>
   </ion-content>
 </ion-view>
